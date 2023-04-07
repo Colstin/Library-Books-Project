@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6342B9E29DF35E900BD9690 /* Library_Books_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342B9D29DF35E900BD9690 /* Library_Books_ProjectApp.swift */; };
+		D6342BA029DF35E900BD9690 /* LibraryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342B9F29DF35E900BD9690 /* LibraryListView.swift */; };
+		D6342BA229DF35EA00BD9690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6342BA129DF35EA00BD9690 /* Assets.xcassets */; };
+		D6342BA529DF35EA00BD9690 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6342BA429DF35EA00BD9690 /* Preview Assets.xcassets */; };
+		D6342BB129DF37AB00BD9690 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D6342BB029DF37AB00BD9690 /* data.json */; };
+		D6342BB329DF389B00BD9690 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342BB229DF389B00BD9690 /* Book.swift */; };
+		D6342BB529DF39A700BD9690 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342BB429DF39A700BD9690 /* DataParser.swift */; };
+		D6342BB729DF3C6900BD9690 /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342BB629DF3C6900BD9690 /* LibraryModel.swift */; };
+		D6342BB929DF4F7100BD9690 /* BookRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342BB829DF4F7100BD9690 /* BookRatingView.swift */; };
+		D6342BBB29DF7ECC00BD9690 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342BBA29DF7ECC00BD9690 /* BookContent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6342B9A29DF35E900BD9690 /* Library Books Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Library Books Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6342B9D29DF35E900BD9690 /* Library_Books_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library_Books_ProjectApp.swift; sourceTree = "<group>"; };
+		D6342B9F29DF35E900BD9690 /* LibraryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListView.swift; sourceTree = "<group>"; };
+		D6342BA129DF35EA00BD9690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6342BA429DF35EA00BD9690 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6342BB029DF37AB00BD9690 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		D6342BB229DF389B00BD9690 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		D6342BB429DF39A700BD9690 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		D6342BB629DF3C6900BD9690 /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
+		D6342BB829DF4F7100BD9690 /* BookRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRatingView.swift; sourceTree = "<group>"; };
+		D6342BBA29DF7ECC00BD9690 /* BookContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
+		D6342BBC29DF97B200BD9690 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6342B9729DF35E900BD9690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6342B9129DF35E900BD9690 = {
+			isa = PBXGroup;
+			children = (
+				D6342BBC29DF97B200BD9690 /* README.md */,
+				D6342B9C29DF35E900BD9690 /* Library Books Project */,
+				D6342B9B29DF35E900BD9690 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6342B9B29DF35E900BD9690 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6342B9A29DF35E900BD9690 /* Library Books Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6342B9C29DF35E900BD9690 /* Library Books Project */ = {
+			isa = PBXGroup;
+			children = (
+				D6342B9D29DF35E900BD9690 /* Library_Books_ProjectApp.swift */,
+				D6342BAB29DF35F700BD9690 /* Views */,
+				D6342BAD29DF361200BD9690 /* ViewModel */,
+				D6342BAC29DF35FF00BD9690 /* Model */,
+				D6342BAF29DF364000BD9690 /* DataServices */,
+				D6342BAE29DF362700BD9690 /* Data */,
+				D6342BA129DF35EA00BD9690 /* Assets.xcassets */,
+				D6342BA329DF35EA00BD9690 /* Preview Content */,
+			);
+			path = "Library Books Project";
+			sourceTree = "<group>";
+		};
+		D6342BA329DF35EA00BD9690 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D6342BA429DF35EA00BD9690 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6342BAB29DF35F700BD9690 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6342B9F29DF35E900BD9690 /* LibraryListView.swift */,
+				D6342BB829DF4F7100BD9690 /* BookRatingView.swift */,
+				D6342BBA29DF7ECC00BD9690 /* BookContent.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D6342BAC29DF35FF00BD9690 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6342BB229DF389B00BD9690 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6342BAD29DF361200BD9690 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6342BB629DF3C6900BD9690 /* LibraryModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6342BAE29DF362700BD9690 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D6342BB029DF37AB00BD9690 /* data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D6342BAF29DF364000BD9690 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				D6342BB429DF39A700BD9690 /* DataParser.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6342B9929DF35E900BD9690 /* Library Books Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6342BA829DF35EA00BD9690 /* Build configuration list for PBXNativeTarget "Library Books Project" */;
+			buildPhases = (
+				D6342B9629DF35E900BD9690 /* Sources */,
+				D6342B9729DF35E900BD9690 /* Frameworks */,
+				D6342B9829DF35E900BD9690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Library Books Project";
+			productName = "Library Books Project";
+			productReference = D6342B9A29DF35E900BD9690 /* Library Books Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6342B9229DF35E900BD9690 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D6342B9929DF35E900BD9690 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D6342B9529DF35E900BD9690 /* Build configuration list for PBXProject "Library Books Project" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6342B9129DF35E900BD9690;
+			productRefGroup = D6342B9B29DF35E900BD9690 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6342B9929DF35E900BD9690 /* Library Books Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6342B9829DF35E900BD9690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6342BA529DF35EA00BD9690 /* Preview Assets.xcassets in Resources */,
+				D6342BB129DF37AB00BD9690 /* data.json in Resources */,
+				D6342BA229DF35EA00BD9690 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6342B9629DF35E900BD9690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6342BB929DF4F7100BD9690 /* BookRatingView.swift in Sources */,
+				D6342BB729DF3C6900BD9690 /* LibraryModel.swift in Sources */,
+				D6342BBB29DF7ECC00BD9690 /* BookContent.swift in Sources */,
+				D6342BA029DF35E900BD9690 /* LibraryListView.swift in Sources */,
+				D6342B9E29DF35E900BD9690 /* Library_Books_ProjectApp.swift in Sources */,
+				D6342BB529DF39A700BD9690 /* DataParser.swift in Sources */,
+				D6342BB329DF389B00BD9690 /* Book.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D6342BA629DF35EA00BD9690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6342BA729DF35EA00BD9690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6342BA929DF35EA00BD9690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Library Books Project/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Libraybooks.Library-Books-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6342BAA29DF35EA00BD9690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Library Books Project/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Libraybooks.Library-Books-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6342B9529DF35E900BD9690 /* Build configuration list for PBXProject "Library Books Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6342BA629DF35EA00BD9690 /* Debug */,
+				D6342BA729DF35EA00BD9690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6342BA829DF35EA00BD9690 /* Build configuration list for PBXNativeTarget "Library Books Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6342BA929DF35EA00BD9690 /* Debug */,
+				D6342BAA29DF35EA00BD9690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6342B9229DF35E900BD9690 /* Project object */;
+}
