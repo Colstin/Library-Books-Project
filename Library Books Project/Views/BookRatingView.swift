@@ -18,18 +18,14 @@ struct BookRatingView: View {
 
     
     var body: some View {
-        
-        NavigationView {
+        //MARK: This will glitch production but use it to be able to see what it'll look like... weird.
+       // NavigationView {
             VStack(alignment: .leading) {
-              
-                
-                Text(book.title)
-                    .font(.title)
-                Spacer()
+                //Spacer()
                 
                 VStack {
                     NavigationLink {
-                        BookContent(book: book)
+                        BookContent(book: book)//.navigationBarBackButtonHidden()
                     } label: {
                         VStack{
                             Text("Read Now!")
@@ -75,14 +71,16 @@ struct BookRatingView: View {
                 }
                 Spacer()
             }
+            .navigationTitle(book.title)
+            .foregroundColor(Color.black)
+            .onAppear{
+                selectedRating = book.rating
+            }
             .padding()
-        }
-        .foregroundColor(Color.black)
-        .onAppear{
-            selectedRating = book.rating
-        }
+            
+        //}
         //.navigationBarBackButtonHidden()
-        
+     
      
     }
     

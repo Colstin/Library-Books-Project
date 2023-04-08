@@ -17,16 +17,12 @@ struct LibraryListView: View {
         
         NavigationView {
             VStack(alignment: .leading, spacing: 0) {
-                Text("My Library")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                
                 GeometryReader { geo in
                     ScrollView {
                         ForEach(model.library) { item in
-                            
                             NavigationLink {
                                 BookRatingView(book: item)
+                               // BookContent(book: item)
                             } label: {
                                 ZStack {
                                     Rectangle()
@@ -59,21 +55,18 @@ struct LibraryListView: View {
                                         Image(photos[item.id - 1])
                                             .resizable()
                                             .frame(width: geo.size.width - 70, height: geo.size.height - 300, alignment: .center)
-                                        
                                     }
-                                   
                                 }
                             }
                         }
                         Text("By Colstin Donaldson")
                     }
                 }
-               
             }
+            .navigationTitle("My Library")
             .padding()
         }
-        .foregroundColor(Color.black)
-        
+        .foregroundColor(Color.black) 
     }//body
 }
 
