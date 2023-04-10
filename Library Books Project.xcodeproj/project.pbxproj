@@ -17,6 +17,7 @@
 		D6342BB729DF3C6900BD9690 /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342BB629DF3C6900BD9690 /* LibraryModel.swift */; };
 		D6342BB929DF4F7100BD9690 /* BookRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342BB829DF4F7100BD9690 /* BookRatingView.swift */; };
 		D6342BBB29DF7ECC00BD9690 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6342BBA29DF7ECC00BD9690 /* BookContent.swift */; };
+		D678984329E20AF900EC6E11 /* LibraryListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678984229E20AF900EC6E11 /* LibraryListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D6342BB829DF4F7100BD9690 /* BookRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRatingView.swift; sourceTree = "<group>"; };
 		D6342BBA29DF7ECC00BD9690 /* BookContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
 		D6342BBC29DF97B200BD9690 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D678984229E20AF900EC6E11 /* LibraryListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D6342B9F29DF35E900BD9690 /* LibraryListView.swift */,
+				D678984229E20AF900EC6E11 /* LibraryListRowView.swift */,
 				D6342BB829DF4F7100BD9690 /* BookRatingView.swift */,
 				D6342BBA29DF7ECC00BD9690 /* BookContent.swift */,
 			);
@@ -205,6 +208,7 @@
 				D6342B9E29DF35E900BD9690 /* Library_Books_ProjectApp.swift in Sources */,
 				D6342BB529DF39A700BD9690 /* DataParser.swift in Sources */,
 				D6342BB329DF389B00BD9690 /* Book.swift in Sources */,
+				D678984329E20AF900EC6E11 /* LibraryListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

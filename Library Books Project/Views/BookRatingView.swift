@@ -18,14 +18,12 @@ struct BookRatingView: View {
 
     
     var body: some View {
-        //MARK: This will glitch production but use it to be able to see what it'll look like... weird.
-       // NavigationView {
+        //MARK: NavigationStack fixes the Stacked back buttons 
+        NavigationStack {
             VStack(alignment: .leading) {
-                //Spacer()
-                
-                VStack {
+                VStack(spacing: 20) {
                     NavigationLink {
-                        BookContent(book: book)//.navigationBarBackButtonHidden()
+                        BookContent(book: book)
                     } label: {
                         VStack{
                             Text("Read Now!")
@@ -34,8 +32,6 @@ struct BookRatingView: View {
                                 .frame(width: 200.0, height: 300.0)
                         }
                     }
-                    
-                    
                     
                     Text("Mark for Later!")
                     Button {
@@ -78,12 +74,9 @@ struct BookRatingView: View {
             }
             .padding()
             
-        //}
+        }
         //.navigationBarBackButtonHidden()
-     
-     
     }
-    
 }
 
 struct BookRatingView_Previews: PreviewProvider {

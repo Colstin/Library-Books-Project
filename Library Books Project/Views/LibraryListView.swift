@@ -15,53 +15,22 @@ struct LibraryListView: View {
     
     var body: some View {
         
-        NavigationView {
+        NavigationStack {
             VStack(alignment: .leading, spacing: 0) {
-                GeometryReader { geo in
+               // GeometryReader { geo in
                     ScrollView {
                         ForEach(model.library) { item in
                             NavigationLink {
                                 BookRatingView(book: item)
                                // BookContent(book: item)
                             } label: {
-                                ZStack {
-                                    Rectangle()
-                                        .foregroundColor(Color.white)
-                                        .frame(width: geo.size.width - 30, height: geo.size.height - 200, alignment: .center)
-                                        .cornerRadius(20)
-                                        .shadow(color: .black.opacity(0.5), radius: 5, x: -5, y: 5)
-                                        .padding()
-                                    
-                                    VStack(alignment: .center) {
-                                        HStack {
-                                            Spacer()
-                                            Text(item.title)
-                                                .font(.title)
-                                                .fontWeight(.bold)
-                                            Spacer()
-                                            
-                                            if item.isFavourite == true{
-                                                Image(systemName: "star.fill")
-                                                    .resizable()
-                                                    .frame(width: 18, height: 18)
-                                                    .foregroundColor(Color.yellow)
-                                            }
-                                            Spacer()
-                                        }
-                                            
-                                        Text(item.author)
-                                            .font(.subheadline)
-                                            .italic()
-                                        Image(photos[item.id - 1])
-                                            .resizable()
-                                            .frame(width: geo.size.width - 70, height: geo.size.height - 300, alignment: .center)
-                                    }
-                                }
+                                LibraryListRowView(model: item)
                             }
                         }
                         Text("By Colstin Donaldson")
                     }
-                }
+               // }//geo
+                
             }
             .navigationTitle("My Library")
             .padding()
